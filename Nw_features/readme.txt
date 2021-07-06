@@ -3,7 +3,7 @@
 
 First, all the tweets found are sorted as per their creation timestamp.
 
-followers/create_followers.py , friends/create_friends.py: Followers and friends of the users who tweeted/retweeted within particular time intervals are calculated.
+followers/collect_followers.py , friends/collect_friends.py: Followers and friends of the users who tweeted/retweeted within particular time intervals are calculated.
 
 nw_features.py script : Networks are created for each 5 min time interval , edges constitute follower-followee relation.
 All network features such as mean number of nodes per tweet, connectivity(degree and giant component), clustering, reciprocity are calculated per network per time interval.
