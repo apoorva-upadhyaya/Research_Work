@@ -4,5 +4,5 @@ identifyNumberViralTweets.py : script extracts the viral tweets from all the twe
 
 virTweets_5min_Interval.py: sort all the tweets as per their creatime timestamp. All the tweets,corresponding author and text are divided into 5min interval upto 1 hour starting from the first tweet of the event.
 
-create_diction_viral_nv_frequency.py: creates viral and non-viral dictionary with tweet id as key and frequency of retweets per time interval 
+create_diction_viral_nv_frequency.py: creates viral and non-viral tweet information dictionaries. These are used for further calculation of all the features.
 
