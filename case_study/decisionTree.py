@@ -13,6 +13,7 @@ with open("data/train_data.txt",'r',encoding='utf-8') as file:
         for line in file:
             data=line
             data=ast.literal_eval(data)
+            data=[float(x) for x in data]
             train_data.append((data))
 
 
@@ -21,6 +22,7 @@ with open("data/test_data.txt",'r',encoding='utf-8') as file:
         for line in file:
             data=line
             data=ast.literal_eval(data)
+            data=[float(x) for x in data]
             test_data.append((data))
 
 train_labels=[]
@@ -33,7 +35,7 @@ test_labels=[]
 with open("data/test_labels.txt",'r',encoding='utf-8') as file:
         for line in file:
             label=line
-            test_data.append(int(label))
+            test_labels.append(int(label))
 
 # scaler = MinMaxScaler()
 # scaler.fit(train_data)
