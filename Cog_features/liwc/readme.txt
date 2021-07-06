@@ -1,1 +1,1 @@
-readme
+LIWC 2015 Dictionay has been used. The files are the sample outputs provided by LIWC , for each tweet(viral/non-viral) or for combining all the tweet text in single file and then calculate LIWC scores. (Both approaches have been used in this study).
