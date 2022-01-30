@@ -17,31 +17,31 @@ import pylab
 from scipy.stats import kstest, norm
 
 ##celeb################################
-viral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+viral = []
 print("celeb  viral***************:",stats.shapiro(viral))
 
-nviral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+nviral = []
 print("celeb  nviral***************:",stats.shapiro(nviral))
 
 ##comm########################
-viral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+viral = []
 print("comm viral***************:",stats.shapiro(viral))
 
-nviral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+nviral = []
 print("comm nviral***************:",stats.shapiro(nviral))
 
 ##politics######################
-viral =  [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+viral =  []
 print("politics viral***************:",stats.shapiro(viral))
 
-nviral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+nviral = []
 print("politics nviral***************:",stats.shapiro(nviral))
 
 ##prod###################################
-viral = [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+viral = []
 print("prod viral***************:",stats.shapiro(viral))
 
-nviral =  [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+nviral =  []
 print("prod nviral***************:",stats.shapiro(nviral))
 
 #### results are as follows::::
