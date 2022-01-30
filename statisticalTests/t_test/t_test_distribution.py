@@ -11,19 +11,19 @@ import random
 ######### viral::
 print("VIRAL :::::::::::::::::")
 
-Communal=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Communal=[]
 
 X=Communal
 
 
-Politics= [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Politics= []
 
 Y=Politics
 
 
 print("communal vs politics 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
-Celeb= [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Celeb= []
 
 Y=Celeb
 
@@ -31,7 +31,7 @@ Y=Celeb
 print("communal vs Celeb 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
 
-Product=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Product=[]
 
 Y=Product
 
@@ -42,25 +42,25 @@ print("communal vs Product 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 ################## non viral
 print("NON VIRAL :::::::::::::::::")
 
-Communal= [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Communal= []
 
 X=Communal
 
-Politics=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Politics=[]
 
 Y=Politics
 
 print("communal vs politics 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
 
-Celeb=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Celeb=[]
 
 Y=Celeb
 
 
 print("communal vs Celeb 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
-Product= [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Product= []
 Y=Product
 
 
@@ -68,42 +68,42 @@ print("communal vs Product 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
 
 ########## viral vs non-viral
-Communal_viral=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Communal_viral=[]
 X=Communal_viral
 
 
-Communal_non=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Communal_non=[]
 
 Y=Communal_non
 
 print("communal vs Communal_non 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
-Politics_viral= [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+Politics_viral= []
 
 X=Politics_viral
 
 
-politics_non=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+politics_non=[]
 
 Y=politics_non
 
 print("Politics_viral vs politics_non 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
-celeb_viral=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+celeb_viral=[]
 
 X=celeb_viral
 
-celeb_non=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+celeb_non=[]
 
 Y=celeb_non
 
 print("celeb_viral vs celeb_non 60mins ::",stats.ttest_ind(X, Y, equal_var=False))
 
-product_viral=[x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+product_viral=[]
 X=product_viral
 
 
-product_non=  [x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12]
+product_non=  []
 
 Y=product_non
 
