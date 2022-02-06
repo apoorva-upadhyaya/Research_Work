@@ -16,12 +16,6 @@ dict_followers=json.load(file_ob)
 print("dict_followers",len(dict_followers))
 
 
-
-file_ob=open("friends/dict_friends.json",'r')
-dict_friends=json.load(file_ob)
-print("dict_friends",len(dict_friends))
-
-
 file_ob=open("../identify_viralTweets/viral/dict_600_info.json",'r')
 dict_info=json.load(file_ob)
 
@@ -80,20 +74,6 @@ for user in dict_followers:
 
 # print("No of nodes ::",len(G.nodes()))
 # print("No of edges ::",len(G.edges()))
-
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
 
 
 nx.write_gpickle(G,"nw_5min.pkl")
@@ -333,21 +313,6 @@ for user in dict_followers:
 				if str(followers[i]) in users_all:
 					# print((followers))
 					G.add_edge(str(followers[i]),str(user))
-				else:
-					G.add_node(str(user))
-
-
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
 				else:
 					G.add_node(str(user))
 
@@ -594,19 +559,6 @@ for user in dict_followers:
 					G.add_node(str(user))
 
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
 
 nx.write_gpickle(G,"nw_15min.pkl")
 
@@ -850,22 +802,6 @@ for user in dict_followers:
 					G.add_node(str(user))
 
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
-
-
-
 nx.write_gpickle(G,"nw_20min.pkl")
 
 nodes_=G.nodes()
@@ -1103,21 +1039,6 @@ for user in dict_followers:
 				if str(followers[i]) in users_all:
 					# print((followers))
 					G.add_edge(str(followers[i]),str(user))
-				else:
-					G.add_node(str(user))
-
-
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
 				else:
 					G.add_node(str(user))
 
@@ -1364,19 +1285,6 @@ for user in dict_followers:
 					G.add_node(str(user))
 
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
 
 
 nx.write_gpickle(G,"nw_30min.pkl")
@@ -1613,20 +1521,6 @@ for user in dict_followers:
 					G.add_node(str(user))
 
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
-
 nx.write_gpickle(G,"nw_35min.pkl")
 
 nodes_=G.nodes()
@@ -1862,19 +1756,7 @@ for user in dict_followers:
 				else:
 					G.add_node(str(user))
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
+
 
 nx.write_gpickle(G,"nw_40min.pkl")
 
@@ -2111,20 +1993,6 @@ for user in dict_followers:
 					G.add_node(str(user))
 
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
-
 
 nx.write_gpickle(G,"nw_45min.pkl")
 
@@ -2357,20 +2225,6 @@ for user in dict_followers:
 				if str(followers[i]) in users_all:
 					# print((followers))
 					G.add_edge(str(followers[i]),str(user))
-				else:
-					G.add_node(str(user))
-
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
 				else:
 					G.add_node(str(user))
 
@@ -2610,19 +2464,6 @@ for user in dict_followers:
 				else:
 					G.add_node(str(user))
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
 
 
 nx.write_gpickle(G,"nw_55min.pkl")
@@ -2858,19 +2699,8 @@ for user in dict_followers:
 				else:
 					G.add_node(str(user))
 
-for user in dict_friends:
-	friends=dict_friends[user]
-	if str(user) in users_all:
-		if (friends==[]):
-			G.add_node(str(user))
-			count=count+1
-		else:	
-			for i in range(0,len(friends)):
-				if str(friends[i]) in users_all:
-					# print((friends))
-					G.add_edge(str(user),str(friends[i]))
-				else:
-					G.add_node(str(user))
+
+					
 
 
 nx.write_gpickle(G,"nw_60min.pkl")
